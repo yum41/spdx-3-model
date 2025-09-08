@@ -71,3 +71,17 @@ simplify creating reproducible builds.
 可以使用类型为 `urlScheme` 的 `ExternalIdentifier` 来标识构建日志。在这种情况下，`ExternalIdentifier` 的注释应该是 `LogReference`。
 
 注意，`buildStartTime` 和 `buildEndTime` 是可选的，可以省略以简化可复现构建的创建。
+
+## Summary @ja
+
+ソフトウェア/生成物のビルドインスタンスを記述するクラス
+
+## Description @ja
+
+ビルドとは、ソフトウェアや生成物が構築されるプロセスを表すものである。ビルドプロセスに関連する情報をカプセル化し、
+ビルドの入力、出力、および関連エンティティ（ビルダー、アイデンティティなど）を記述するための関係を構築できる要素を提供する。
+
+`urlScheme`タイプの`ExternalIdentifier`は、ビルドログを識別するために使用できる。
+この場合、`ExternalIdentifier`のコメントは`LogReference`とする必要がある。
+
+`buildStartTime`および`buildEndTime`はオプションであり、再現可能なビルドの作成を簡素化するために省略可能となる。
