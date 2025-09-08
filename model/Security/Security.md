@@ -14,3 +14,11 @@ The Security Profile captures security related information.
 
 - id: https://spdx.org/rdf/3.0.1/terms/Security
 - name: Security
+
+## Summary @ja
+
+Securityプロファイルは、セキュリティ関連の情報を収集する。
+
+## Description @ja
+
+Securityプロファイルは、セキュリティ関連の情報を収集する。
