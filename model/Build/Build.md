@@ -93,3 +93,31 @@ or a build tool, the `hasInput` relationshipType can be replaced by a
 符合 `Build` 配置文件要求至少有一个或多个 `Build` 类的实例。此外，还必须至少有三个类型为 `LifecycleScopedRelationship` 的 `Relationship` 实例，其 “scope” 属性必须是 “build”，而 “from” 属性必须是构建实例。
 
 至少，构建配置文件必须包含 `hasInput`，`hasOutput` 和 `invokedBy` `RelationshipType`。如果已知输入是构建配置或构建工具， 可以用 `configures` 或 `usesTool` 替换 `hasInput` `RelationshipType`。
+
+## Summary @ja
+
+Buildプロファイルはソフトウェアビルドのインスタンスを記述するために必要な情報を定義する。
+
+## Description @ja
+
+ソフトウェアビルドとは、ソフトウェアビルドツールを用いてソフトウェア入力をソフトウェア成果物に変換する行為を指す。入力にはソースコード、設定ファイル、ビルド環境としての成果物、ビルドツールなどが含まれる。出力には中間成果物や他のビルド入力、あるいは最終成果物などが含まれる。
+
+BuildプロファイルはElementのサブクラスである`Build`を提供する。
+
+また、Coreプロファイルから必要なRelationshipTypeの最小限のセットを提供する：
+
+- hasInput: Build要素とその入力との関係を記述する
+- hasOutput: Build要素とその出力との関係を記述する
+- invokedBy: Build要素とそれを呼び出したエージェントとの関係を記述する
+
+さらにビルド情報を記述するために以下のRelationshipTypeを使用することができる：
+
+- hasHost: Build要素からビルドステージまたはホストへの関係を記述する
+- configures: 構成設定(configuration)とBuild要素への関係を記述する
+- ancestorOf: Build要素から、その子Buildを記述するBuild要素への関係を記述する
+- descendantOf: 子Buildの要素からその親への関係を記述する
+- usesTool: Build要素からビルドツールへの関係を記述する
+
+Buildプロファイル内のすべての関係は`LifecycleScopeType`の"Build"に位置づけられる。
+
+`hasInput`のRelationshipは、これらの入力の性質がSPDXドキュメント作成時に不明な場合、設定ファイルまたはビルドツールに適用することができる。
