@@ -30,3 +30,13 @@ a configuration file to the builder.
 `parameter` 是构建参数的键值对，及其根据 `buildType` 提供给构建者用于构建实例的值。
 
 这与 [`environment`](environment.md) 属性的不同之处在于，键和值是作为命令行参数或配置文件提供给构建者的。
+
+## Summary @ja
+
+ビルドのインスタンスで使用されるパラメータを記述するプロパティ
+
+## Description @ja
+
+パラメータは、ビルドパラメータのキーと値のペアであり、ビルドタイプに応じてビルドインスタンス用にビルダーに提供された値である。
+
+これは[`environment`](environment.md)プロパティとは異なり、キーと値はコマンドライン引数または設定ファイルとしてビルダーに提供される。

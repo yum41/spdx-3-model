@@ -71,3 +71,35 @@ jobs:
 
 ...
 ```
+
+## Summary @ja
+
+ビルドの呼び出しエントリポイントを記述するプロパティ
+
+## Description @ja
+
+ビルドエントリポイントは、ビルドがトリガーされた際に常に実行されるビルドの実行可能ファイルであり、`buildType` に従って動作する。
+
+たとえば、シェルスクリプトの実行によってビルドがトリガーされた場合、エントリポイントは `script.sh` となる。
+
+宣言されたビルドにおいて、エントリポイントとは、ビルドがトリガーされた際に常に実行される設定ファイルまたはビルド宣言内の位置を指す。
+
+たとえば、次の設定ファイルでは、ビルドのエントリポイントは `publish` となる。
+
+```yaml
+name: Publish packages to PyPI
+
+on:
+  create:
+    tags: "*"
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    if: startsWith(github.ref, 'refs/tags/')
+    steps:
+
+...
+```
+
+

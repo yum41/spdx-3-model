@@ -65,3 +65,28 @@ For more information, see the SLSA definition of buildType.
 如果 `buildType` IRI 无法识别，仍然可以检查构建的其他属性，但可能无法从中推导出更深层的含义。
 
 有关更多信息，请参阅 SLSA（Software Logistics and Supply Chain Automation，软件物流和供应链自动化） 对 `buildType` 的定义。
+
+## Summary @ja
+
+ビルドが実行されたツールチェーン、プラットフォーム、またはインフラストラクチャを示すための補足情報となるプロパティ
+
+## Description @ja
+
+`buildType` は、ビルドが実行されたツールチェーン、プラットフォーム、またはインフラストラクチャを表すIRI(Internationalized Resource Identifier、国際化資源識別子)である。
+
+`buildType` は、ビルドの"種類"を定義することで他のビルドパラメータの意味を解釈するために使用される。異なる `Build` 要素で同じ `buildType` が確認された場合、それらは同じ種類のビルドに見えるが異なるインスタンスであり、異なる構成を持つ可能性があることを意味する。
+
+よく知られた`buildType`を使用していない場合、他の`buildType` IRIとの競合を防ぐため、自身が所有するドメインに名前空間を指定する必要がある。
+
+`buildType` の例としては以下が挙げられる：
+
+- GitHub Actionsワークフロー
+- GitHub Actionsのパイプラインのステップ
+- コンパイラやその他のツールの呼び出し
+- 上位レベルでビルドを調整するスクリプト
+
+`ancestorOf` Relationshipを使用してビルド情報を"ネスト"できることに留意すること。
+
+`buildType` IRIが認識されない場合でもビルドの他のプロパティを検査することは可能であるが、それらからより深い意味を導き出せない可能性がある。
+
+詳細についてはSLSAの`buildType`定義を参照されたい。

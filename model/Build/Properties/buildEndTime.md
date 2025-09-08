@@ -27,3 +27,13 @@ This value is typically recorded by the builder.
 `buildEndTime` 描述构建结束或完成的时间。
 
 这个值通常由构建者记录。
+
+## Summary @ja
+
+ビルドが停止する時刻を記述するプロパティ
+
+## Description @ja
+
+`buildEndTime` は、ビルドが停止または完了した時刻を表す。
+
+この値は通常、ビルダー(生成物をビルドした人物やツール)によって記録される。

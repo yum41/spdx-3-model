@@ -27,3 +27,13 @@ The builder typically records this value.
 `buildStartTime` 是触发构建的时间。
 
 这个值通常由构建者记录。
+
+## Summary @ja
+
+ビルドの開始時刻を表すプロパティ
+
+## Description @ja
+
+`buildStartTime` は、ビルドが開始された時刻を示す。
+
+この値は通常、ビルダー(生成物をビルドした人物やツール)によって記録される。
