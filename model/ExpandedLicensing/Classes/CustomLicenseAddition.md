@@ -21,3 +21,11 @@ a License, but which is not itself a standalone License.
 - name: CustomLicenseAddition
 - SubclassOf: LicenseAddition
 - Instantiability: Concrete
+
+## Summary @ja
+
+SPDX Exceptions List(SPDX例外リスト)に記載されていないライセンス追加条項に関するクラス
+
+## Description @ja
+
+`CustomLicenseAddition` は、[SPDX License Exceptions(SPDXライセンス例外)](https://spdx.org/licenses/exceptions-index.html)に記載されていないライセンスへの追加条項を表す。このため追加事項はSPDXデータ作成者によって定義される。

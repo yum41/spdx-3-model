@@ -32,3 +32,11 @@ Syntax by the `WITH` operator.
   - type: ExtendableLicense
   - minCount: 1
   - maxCount: 1
+
+## Summary @ja
+
+`AnyLicenseInfo` のうち、追加テキストが適用されたライセンスを表すクラス
+
+## Description @ja
+
+`WithAdditionOperator` は、指定された `License` が指定された `LicenseAddition` の対象となることを示す。`LicenseAddition` は、[SPDX License Exceptions(SPDXライセンス例外)](https://spdx.org/licenses/exceptions-index.html) に記載されるライセンス例外（`ListedLicenseException`）である場合もあれば、その他の追加条項（`CustomLicenseAddition`）である場合もあります。これはSPDX License Expression Syntax(SPDXライセンス構文)において `WITH` 演算子で表される。

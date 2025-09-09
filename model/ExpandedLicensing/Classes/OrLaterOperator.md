@@ -32,3 +32,13 @@ data will need to determine for themselves what meaning to attribute to a
   - type: License
   - minCount: 1
   - maxCount: 1
+
+## Summary @ja
+
+`AnyLicenseInfo` のうち、指定されたライセンスの表記されているバージョン、またはそれ以降のバージョンの情報を表すクラス
+
+## Description @ja
+
+`OrLaterOperator` は、`AnyLicenseInfo` のバージョン情報が (1) 対応するライセンスの指定バージョン、または (2) そのライセンスのそれ以降のいずれかのバージョンを表すことを示す。これはSPDX License Expression Syntax(SPDXライセンス構文)において `+` 演算子で表される。
+
+特定のライセンスにおける"後続バージョン"の定義は文脈依存であり、SPDXでは規定されていない。`License`によってはバージョン管理が行われていない場合や、バージョン順序が明確に定義されていない場合がある。SPDXデータの利用者は、特定のライセンスにおける"後続バージョン"の演算子にどのような意味を付与するかを自ら判断する必要がある。

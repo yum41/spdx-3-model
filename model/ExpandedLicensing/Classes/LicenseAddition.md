@@ -48,3 +48,14 @@ or otherwise) which is defined by an SPDX data creator (CustomLicenseAddition).
   - type: xsd:string
   - minCount: 0
   - maxCount: 1
+
+## Summary @ja
+
+`License` に追加されることを意図した追加テキスト用の抽象クラス
+ただし、それ自体が独立する `License` ではない
+
+## Description @ja
+
+`LicenseAddition` とは、`License` に追加条項として付加されることを意図したテキストであり、それ自体が独立した `License` となることを意図したものではない。
+
+これは、[SPDX License Exceptions(SPDXライセンス例外)](https://spdx.org/licenses/exceptions-index.html) に記載される例外(`ListedLicenseException`)である場合もあれば、SPDXデータ作成者によって定義されるその他の追加テキスト(例外として、またはそれ以外の場合)である場合もある(`CustomLicenseAddition`)。

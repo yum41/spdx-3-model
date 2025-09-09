@@ -54,3 +54,11 @@ A License represents a license text, whether listed on the
   - type: xsd:string
   - minCount: 0
   - maxCount: 1
+
+## Summary @ja
+
+`AnyLicenseInfo` におけるライセンスに関する抽象クラス
+
+## Description @ja
+
+ライセンスは、[SPDX License List(SPDXライセンス一覧)](https://spdx.org/licenses/)に掲載されているか(`ListedLicense`)、またはSPDXデータ作成者によって定義されたもの(`CustomLicense`)であるライセンステキストを表す。

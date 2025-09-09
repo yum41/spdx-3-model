@@ -16,3 +16,11 @@ license property value. This class is used for the value.
 - name: ExtendableLicense
 - SubclassOf: /SimpleLicensing/AnyLicenseInfo
 - Instantiability: Abstract
+
+## Summary @ja
+
+ライセンスまたは `OrLaterOperator` を表す抽象クラス
+
+## Description @ja
+
+`WithAdditionOperator` は、ライセンスプロパティの値として、`License` または `OrLaterOperator` を持つことができる。`ExtendableLicense` クラスはその値として利用される。

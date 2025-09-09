@@ -17,3 +17,11 @@ and is therefore defined by an SPDX data creator.
 - name: CustomLicense
 - SubclassOf: License
 - Instantiability: Concrete
+
+## Summary @ja
+
+SPDXライセンスリストに記載されていないライセンスに関するクラス
+
+## Description @ja
+
+`CustomLicense` は、[SPDX License List (SPDX ライセンス一覧)](https://spdx.org/licenses)に記載されていないライセンスを表す。このためこのライセンスはSPDXデータ作成者によって定義される。
