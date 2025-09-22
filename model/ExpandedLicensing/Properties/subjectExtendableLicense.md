@@ -16,3 +16,11 @@ text' effect (WithAdditionOperator).
 - name: subjectExtendableLicense
 - Nature: ObjectProperty
 - Range: ExtendableLicense
+
+## Summary @ja
+
+'with addition'モデルに参加している `License` を表すプロパティ
+
+## Description @ja
+
+`subjectExtendableLicense` は、'with addition'の表記(`WithAdditionOperator`)が影響する`License`を表す。

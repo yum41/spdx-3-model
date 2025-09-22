@@ -23,3 +23,11 @@ preferred.
 - name: obsoletedBy
 - Nature: DataProperty
 - Range: xsd:string
+
+## Summary @ja
+
+非推奨の `License` または `LicenseAddition` の代わりに推奨される `licenseId` を指定するプロパティ
+
+## Description @ja
+
+非推奨の `License` または `LicenseAddition` の `obsoletedBy` 値は、その代わりに使用することが推奨される `License` または `LicenseAddition` の `licenseId` を指定する。これは `licenseId` で指定されるものと同じ形式を使用する。

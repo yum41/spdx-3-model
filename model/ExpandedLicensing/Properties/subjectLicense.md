@@ -16,3 +16,11 @@ A subjectLicense is a License which is subject an 'or later' effect
 - name: subjectLicense
 - Nature: ObjectProperty
 - Range: License
+
+## Summary @ja
+
+'or later'モデルに参加している `License` を表すプロパティ
+
+## Description @ja
+
+`subjectLicense` は、'or later'の表記(`OrLaterOperator`)が影響する`License`を表す。

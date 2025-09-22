@@ -23,3 +23,15 @@ capture all the text and metadata associated with a license.
 - name: standardLicenseTemplate
 - Nature: DataProperty
 - Range: xsd:string
+
+## Summary @ja
+
+`License` のテキストの変更可能なセクションを記述するためのライセンステンプレートを表すプロパティ
+
+## Description @ja
+
+`standardLicenseTemplate` には、ライセンス文書の変更可能なセクションを記述するライセンステンプレートが含まれる。
+
+フォーマット情報については、[SPDX License List Matching Guidelines(SPDXライセンスリスト照合ガイドライン)](../../../annexes/license-matching-guidelines-and-templates.md)のLegacy Text Template format(レガシーテキストテンプレート形式)セクションを参照されたい。
+
+代替手段として、[licenseXml](./licenseXml.md)の使用が推奨される。これにより、ライセンスに関連するすべてのテキストとメタデータを取得することが可能となる。

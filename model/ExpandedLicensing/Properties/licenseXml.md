@@ -22,3 +22,16 @@ For a text description of the XML fields, see
 - name: licenseXml
 - Nature: DataProperty
 - Range: xsd:string
+
+## Summary @ja
+
+ライセンスXML形式でライセンスに関連付けられたすべてのテキストとメタデータを表すプロパティ
+
+## Description @ja
+
+ライセンスXMLフォーマットは、SPDX法務チームによって定義され使用される。
+
+公式のスキーマ定義は以下で入手可能：
+[SPDX License List XML Schema(SPDXライセンスリストXMLスキーマ)](https://github.com/spdx/license-list-XML/blob/v3.25.0/schema/ListedLicense.xsd).
+
+XMLフィールドのテキストに関する説明については、[XML templete fields(XMLテンプレートフィールド)](https://github.com/spdx/license-list-XML/blob/v3.25.0/DOCS/xml-fields.md)を参照されたい。

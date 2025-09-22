@@ -21,3 +21,11 @@ one in which it was marked as deprecated.
 - name: deprecatedVersion
 - Nature: DataProperty
 - Range: xsd:string
+
+## Summary @ja
+
+非推奨となるライセンス、または例外識別子のSPDX License List(SPDXライセンスリスト)のバージョンを指定するプロパティ
+
+## Description @ja
+
+[SPDX License List(SPDXライセンスリスト)](https://spdx.org/licenses/) に掲載されている `ListedLicense` または [SPDX License Exceptions(SPDXライセンス例外)](https://spdx.org/licenses/exceptions-index.html) に掲載されている `ListedLicenseException` における `deprecatedVersion` は、ライセンスが非推奨となる場合、非推奨となる最初のLicense List(ライセンスリスト)のバージョンを指定する。

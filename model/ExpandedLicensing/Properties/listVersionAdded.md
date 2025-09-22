@@ -19,3 +19,11 @@ one in which it was included.
 - name: listVersionAdded
 - Nature: DataProperty
 - Range: xsd:string
+
+## Summary @ja
+
+ `ListedLicense` または `ListedLicenseException` 識別子が最初に追加されたSPDX License List(SPDXライセンスリスト)のバージョンを指定するプロパティ
+
+## Description @ja
+
+`listVersionAdded` は、`ListedLicense` または `ListedLicenseException` が[SPDX License List(SPDXライセンスリスト)](https://spdx.org/licenses/) において最初に追加されたバージョンを指定する。

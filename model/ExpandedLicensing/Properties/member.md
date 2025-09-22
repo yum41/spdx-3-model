@@ -17,3 +17,11 @@ license set.
 - name: member
 - Nature: ObjectProperty
 - Range: /SimpleLicensing/AnyLicenseInfo
+
+## Summary @ja
+
+ライセンスセットに含まれるライセンス形式を表すプロパティ
+
+## Description @ja
+
+`member` は、論理積(`AND`)のライセンスセット(`ConjunctiveLicenseSet`型)、または論理和(`OR`)のライセンスセットに参加するライセンス表記である。

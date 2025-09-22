@@ -30,3 +30,17 @@ assertions about whether the License is approved by the OSI.
 - name: isOsiApproved
 - Nature: DataProperty
 - Range: xsd:boolean
+
+## Summary @ja
+
+`License` がOpen Source Initiative(OSI、オープンソース・イニシアチブ)によって承認済みとしてリストに含まれるかどうかを指定するプロパティ
+
+## Description @ja
+
+`isOsiApproved` は、[Open Source Initiative (OSI、オープンソース・イニシアチブ)](https://opensource.org)がこの `License` を"承認済み"としてOSI Approved Licenses(OSI認証ライセンス)のリストに掲載しているかどうかを指定する。本稿執筆時点では、[OSI Approved Licenses(OSI承認ライセンス)](https://opensource.org/licenses) に掲載されている。
+
+値が `true` の場合、そのライセンスはOSIが承認済みとして公開するライセンスリストに含まれることを示す。
+
+値が `false` の場合、そのライセンスはFSFがOSIが承認済みとして公開するライセンスリストに含まれていないことを示す(例：OSIが公にライセンスを承認していないと表明している場合)。
+
+`License`が指定されていない場合、SPDXデータ作成者は `License` がFSFの解説リストに掲載されているか否かについては断定しないことを示す。

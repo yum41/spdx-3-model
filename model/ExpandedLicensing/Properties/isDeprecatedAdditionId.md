@@ -30,3 +30,15 @@ another identifier is preferable.
 - name: isDeprecatedAdditionId
 - Nature: DataProperty
 - Range: xsd:boolean
+
+## Summary @ja
+
+追加のテキスト識別子が非推奨であるかどうかを指定するプロパティ
+
+## Description @ja
+
+`isDeprecatedAdditionId` は、`LicenseAddition` の識別子が非推奨であるかどうかを指定する。このプロパティが定義されていない場合は、非推奨ではないとみなされる。
+
+`LicenseAddition` が[SPDX License Exceptions(SPDXライセンス例外)](https://spdx.org/licenses/exceptions-index.html)に含まれる場合、`deprecatedVersion` は、Exceptions List(例外リスト)においてどのバージョンで初めて非推奨となったかを示す。
+
+この文脈における"非推奨"とは、 _識別子_ の使用を非推奨とすることを指し、基盤となるライセンス追加条項自体を指すものではない。言い換えれば、`LicenseAddition` の作成者や管理者がある特定の `LicenseAddition` を一般的に使用すべきでないと表明した場合でも、それはその `LicenseAddition` の識別子が"非推奨"であることを _意味するものではない_ 。むしろ、別の識別子の使用が望ましいと判断された場合に、通常 `LicenseAddition` の識別子は"非推奨"となる。

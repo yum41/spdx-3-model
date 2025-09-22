@@ -23,3 +23,15 @@ capture all the text and metadata associated with a license.
 - name: standardAdditionTemplate
 - Nature: DataProperty
 - Range: xsd:string
+
+## Summary @ja
+
+`LicenseAddition` の全文をSPDXのテンプレート形式で識別するためのプロパティ
+
+## Description @ja
+
+`standardAdditionTemplate` には、`LicenseAddition` テキストの可変部分を記述するライセンス追加テンプレートが含まれる。
+
+フォーマット情報については、[SPDX License List Matching Guidelines(SPDXライセンスリスト照合ガイドライン)](../../../annexes/license-matching-guidelines-and-templates.md)のLegacy Text Template format(レガシーテキストテンプレート形式)セクションを参照してください。
+
+代替手段として、[licenseXml](./licenseXml.md)の使用が推奨される。これにより、ライセンスに関連するすべてのテキストとメタデータを取得することが可能となる。
