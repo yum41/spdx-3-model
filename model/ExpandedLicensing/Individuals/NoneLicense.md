@@ -21,3 +21,11 @@ available for this Artifact.
 ## Property Values
 
 - name: "NONE"
+
+## Summary @ja
+
+SPDXデータの作成者が、ライセンスが存在しないと判断した場合に用いられる固有の値
+
+## Description @ja
+
+`NoneLicense` はSPDX作成者がこの `Artifact` に対して利用可能なライセンスが存在しないと判断した場合に利用されるべきである。
